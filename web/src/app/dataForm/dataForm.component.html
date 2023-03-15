@@ -1,0 +1,10 @@
+<div class="layout-row" >
+  <section class="layout-column align-items-center justify-content-center" >
+      <input type="text" data-cy="input-name" required placeholder="Name" [(ngModel)]="name"/>
+      <input data-cy="input-amount" type="number" placeholder="Amount" [(ngModel)]="amount"/>
+  </section>
+  <section class="layout-row justify-content-center align-items-center">
+      <button data-cy="add-button" class="w-30" (click)="onSubmit()">Add</button>
+      <button data-cy="settleup-button" style="background: blue;" class="w-60" (click)="onSettleUp()">Settle Up</button>
+  </section>
+</div>

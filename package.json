@@ -1,0 +1,21 @@
+{
+  "name": "holiday-expenses-calculator",
+  "version": "1.0.0",
+  "description": "Bunk dev test",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install --prefix api && npm install --prefix web",
+    "start": "concurrently \"npm run start --prefix api\" \"npm run start --prefix web\"",
+    "test": "npm run test --prefix api",
+    "tslint": "npm run tslint --prefix api && npm run tslint --prefix web",
+    "prettier:check": "npm run prettier:check --prefix api && npm run prettier:check --prefix web",
+    "prettier:write": "npm run prettier:write --prefix api && npm run prettier:write --prefix web",
+    "e2e": "npm run e2e --prefix web",
+    "e2e-headless": "npm run e2e-headless --prefix web"
+  },
+  "author": "Andrei Royal",
+
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

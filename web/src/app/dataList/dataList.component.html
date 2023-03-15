@@ -1,0 +1,19 @@
+<div class="layout-column align-items-center justify-content-center">
+  <div class="card pb-8">
+    <table data-cy="expenses-table">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Amount</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let item of dataList; let idx = index;" id="list-item-{{idx}}">
+        <td data-test-id="item-name">{{item.name}}</td>
+        <td data-test-id="item-name">{{item.amount}}</td>
+        <td><button class="icon-only mx-2" data-test-id="item-delete" (click)="deleteItem(item)"><i class="delete material-icons">delete</i></button></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
